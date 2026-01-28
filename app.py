@@ -81,6 +81,37 @@ st.markdown("""
     .stProgress > div > div > div > div {
         background-color: #45a29e;
     }
+
+    /* Ocultar Toolbar superior derecha (Hamburguesa y 'Deploy') */
+    [data-testid="stToolbar"] {
+        visibility: hidden;
+        height: 0%;
+        position: fixed;
+    }
+    
+    /* Ocultar Decoración superior (Barra de colores) */
+    [data-testid="stDecoration"] {
+        visibility: hidden;
+        height: 0%;
+    }
+
+    /* Ocultar Footer 'Made with Streamlit' */
+    footer {
+        visibility: hidden;
+        height: 0%;
+    }
+
+    /* Ocultar el Header contenedor */
+    header {
+        visibility: hidden;
+        height: 0%;
+    }
+    
+    /* Subir el contenido para ocupar el espacio vacío */
+    .block-container {
+        padding-top: 1rem !important;
+        padding-bottom: 0rem !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 

@@ -80,4 +80,5 @@ The application operates on a flat list of tasks. The "Source of Truth" (Google 
 - [Phase 14.0] "Cloud Ready": Implemented Hybrid Storage (Local JSON + MongoDB). Added `requirements.txt` for deployment.
 - [Phase 14.5] "Cloud Sync": Executed `upload_data.py`. Local database successfully replicated to MongoDB Atlas (Cluster0).
 - [Phase 15.0] "Turbo Mode": Optimized `data_engine.py` using `st.cache_resource` for persistent MongoDB connections.
+- [Phase 15.5] "UI Clean": Removed Streamlit toolbar, footer, and decoration for a native application feel.
 
