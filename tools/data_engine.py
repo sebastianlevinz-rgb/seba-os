@@ -1,45 +1,50 @@
 import json
 import os
-from datetime import datetime
 import streamlit as st
 import pymongo
+from datetime import datetime
 
 # Configuración
-# Corrected path: database.json is at the project root, not inside tools/
-DB_LOCAL_PATH = 'database.json'
-MONGO_URI = st.secrets.get("MONGO_URI", None)
+DB_LOCAL_PATH = 'tools/database.json'
+
+# --- CORRECCIÓN CLAVE PARA RENDER ---
+# Intentamos buscar la clave en las Variables de Entorno (Render) primero.
+# Si no está, intentamos en los Secretos de Streamlit (Local/Streamlit Cloud).
+MONGO_URI = os.getenv("MONGO_URI")
+
+if not MONGO_URI:
+    try:
+        MONGO_URI = st.secrets["MONGO_URI"]
+    except:
+        MONGO_URI = None
+# ------------------------------------
 
 # --- TURBO MODE: CACHING DE CONEXIÓN ---
 @st.cache_resource
 def init_connection():
-    """Esta función se ejecuta SOLO UNA VEZ y mantiene la conexión viva."""
     if not MONGO_URI:
         return None
     try:
-        # tlsAllowInvalidCertificates=True ayuda a veces con redes lentas/corporativas
         return pymongo.MongoClient(MONGO_URI)
     except Exception as e:
         st.error(f"Error de conexión: {e}")
         return None
 
 def get_db_collection():
-    """Obtiene la colección usando la conexión en caché"""
     client = init_connection()
     if client:
         return client["seba_os_db"]["user_data"]
     return None
 
 # --- LÓGICA DE CARGA ---
-
 def load_db():
     collection = get_db_collection()
     
-    # MODO NUBE (MongoDB)
+    # MODO NUBE
     if collection is not None:
         try:
             data = collection.find_one({"_id": "main_data"})
             if not data:
-                # Inicializar si vacío
                 initial_data = {
                     "_id": "main_data", 
                     "user_profile": {"name": "Seba", "level": 1, "total_xp": 0}, 
@@ -49,8 +54,7 @@ def load_db():
                 return initial_data
             return data
         except Exception as e:
-            # Fallback silencioso si falla la red momentáneamente
-            st.warning(f"Usando modo offline temporalmente... ({e})")
+            print(f"Error leyendo nube: {e}")
     
     # MODO LOCAL (Fallback)
     if not os.path.exists(DB_LOCAL_PATH):
@@ -67,19 +71,15 @@ def save_db(data):
             collection.replace_one({"_id": "main_data"}, data, upsert=True)
             return
         except:
-            pass # Si falla, intentará guardar local
+            pass
 
     # MODO LOCAL
     with open(DB_LOCAL_PATH, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-# --- FUNCIONES DE LÓGICA (CRUD) ---
-
-def get_user_profile():
-    return load_db().get("user_profile", {})
-
-def get_areas():
-    return load_db().get("areas", [])
+# --- FUNCIONES CRUD (Sin cambios) ---
+def get_user_profile(): return load_db().get("user_profile", {})
+def get_areas(): return load_db().get("areas", [])
 
 def calculate_xp():
     data = load_db()
@@ -92,13 +92,10 @@ def calculate_xp():
                 total_possible += xp
                 if task['status'] == 'complete':
                     total_earned += xp
-    
-    # Solo guardamos si hubo cambios reales en XP para ahorrar escrituras
     if data['user_profile'].get('total_xp') != total_earned:
         data['user_profile']['total_xp'] = total_earned
         data['user_profile']['level'] = 1 + (total_earned // 500)
         save_db(data)
-        
     return total_earned, total_possible
 
 def update_task_status(area_id, project_index, task_id, new_status, output_text=None):
@@ -127,10 +124,7 @@ def add_project(area_id, project_name):
 
 def add_task(area_id, project_index, title, xp=10, due_date=None):
     data = load_db()
-    new_task = {
-        "id": f"t_{int(datetime.now().timestamp())}", 
-        "title": title, "status": "todo", "xp": xp, "due_date": due_date
-    }
+    new_task = {"id": f"t_{int(datetime.now().timestamp())}", "title": title, "status": "todo", "xp": xp, "due_date": due_date}
     for area in data['areas']:
         if area['id'] == area_id:
             area['projects'][project_index]['tasks'].append(new_task)
@@ -166,11 +160,7 @@ def get_global_completed_tasks():
         for p_idx, proj in enumerate(area['projects']):
             for task in proj['tasks']:
                 if task.get('status') == 'complete':
-                    completed.append({
-                        'task': task, 'area_id': area['id'], 'area_name': area['name'],
-                        'project_index': p_idx, 'project_name': proj['name'],
-                        'completed_at': task.get('completed_at', '')
-                    })
+                    completed.append({'task': task, 'area_id': area['id'], 'area_name': area['name'], 'project_index': p_idx, 'project_name': proj['name'], 'completed_at': task.get('completed_at', '')})
     completed.sort(key=lambda x: x['completed_at'], reverse=True)
     return completed
 
