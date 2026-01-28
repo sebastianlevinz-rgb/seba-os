@@ -1,0 +1,607 @@
+{
+  "user_profile": {
+    "name": "Seba",
+    "level": 1,
+    "total_xp": 80
+  },
+  "areas": [
+    {
+      "id": "zevah",
+      "name": "Zevah (Music Artist)",
+      "color": "#9333EA",
+      "projects": [
+        {
+          "name": "Identity & Rebranding",
+          "tasks": [
+            {
+              "id": "z1_1",
+              "title": "Fix Spotify Identity (Zev vs Zevah)",
+              "status": "process",
+              "xp": 50,
+              "note": "Contact Distributor/Guille to separate profiles."
+            },
+            {
+              "id": "z1_2",
+              "title": "Update Bio & Photos",
+              "status": "todo",
+              "xp": 20,
+              "note": "Highlight: Solo project, Israel based, Spinetta/Cerati influence."
+            },
+            {
+              "id": "z1_3",
+              "title": "Social Media Reset",
+              "status": "todo",
+              "xp": 30,
+              "note": "Archive old posts, apply new visual identity (Logo/Palette)."
+            }
+          ]
+        },
+        {
+          "name": "Relaunch: EP 'Seba' (Amarillo 2016)",
+          "tasks": [
+            {
+              "id": "z2_1",
+              "title": "Restore Cover Art",
+              "status": "todo",
+              "xp": 30,
+              "note": "Replace blurry version with high-res original 'La Chola' design."
+            },
+            {
+              "id": "z2_2",
+              "title": "Fix Metadata: Gativideo",
+              "status": "todo",
+              "xp": 20,
+              "note": "Add 'Livelli y Los Saravia' as Featured Artist."
+            },
+            {
+              "id": "z2_3",
+              "title": "Canvas: Amarillo",
+              "status": "todo",
+              "xp": 20,
+              "note": "Design new AI/Loop visual."
+            },
+            {
+              "id": "z2_4",
+              "title": "Canvas: Gativideo",
+              "status": "todo",
+              "xp": 20,
+              "note": "Edit using video cuts from original footage."
+            },
+            {
+              "id": "z2_5",
+              "title": "Canvas: Ver Real",
+              "status": "todo",
+              "xp": 20,
+              "note": "Recycle 'Pablito Biólogo' video (cactus flower opening)."
+            },
+            {
+              "id": "z2_6",
+              "title": "Canvas: Palermo",
+              "status": "todo",
+              "xp": 20,
+              "note": "Edit using footage of Feli and Mateo."
+            },
+            {
+              "id": "z2_7",
+              "title": "Canvas: Aprender",
+              "status": "todo",
+              "xp": 20,
+              "note": "Check archive for images/footage from Uruguay."
+            }
+          ]
+        },
+        {
+          "name": "Relaunch: EP 'Tres Líneas de Subte'",
+          "tasks": [
+            {
+              "id": "z3_1",
+              "title": "Canvas: Minimalist Redhead",
+              "status": "todo",
+              "xp": 20,
+              "note": "Style: Lo-Fi/Anime vibes."
+            },
+            {
+              "id": "z3_2",
+              "title": "Canvas: Montana",
+              "status": "todo",
+              "xp": 20,
+              "note": "Visuals reflecting the 'mountain/Seibos' theme."
+            },
+            {
+              "id": "z3_3",
+              "title": "Canvas: Manantial",
+              "status": "todo",
+              "xp": 20,
+              "note": "Water-themed visuals/ambient vibe."
+            },
+            {
+              "id": "z3_4",
+              "title": "Storytelling Content",
+              "status": "todo",
+              "xp": 30,
+              "note": "Create posts about rehearsals at Manusa's house with Bicha & Mecha."
+            }
+          ]
+        },
+        {
+          "name": "Launch: Single 'Dinosaurio'",
+          "tasks": [
+            {
+              "id": "z4_1",
+              "title": "Distributor Upload",
+              "status": "todo",
+              "xp": 50,
+              "note": "Target: July 21 (Upload deadline June 21)."
+            },
+            {
+              "id": "z4_2",
+              "title": "Generate Cover Art",
+              "status": "process",
+              "xp": 30,
+              "note": "Use Midjourney/AI. Theme: Nostalgic/Retro."
+            },
+            {
+              "id": "z4_3",
+              "title": "Edit Backstage Trailer",
+              "status": "todo",
+              "xp": 30,
+              "note": "Compile footage from the recording session (Viet)."
+            },
+            {
+              "id": "z4_4",
+              "title": "Create Main Visualizer",
+              "status": "todo",
+              "xp": 40,
+              "note": "Full track video loop."
+            },
+            {
+              "id": "z4_5",
+              "title": "Record Live Session",
+              "status": "hold",
+              "xp": 50,
+              "note": "Location: Balcony or iconic spot in Israel. Acoustic setup."
+            }
+          ]
+        },
+        {
+          "name": "Launch: Single 'The Face'",
+          "tasks": [
+            {
+              "id": "z5_1",
+              "title": "Confirm Title",
+              "status": "todo",
+              "xp": 10,
+              "note": "Decide: 'The Face' vs 'Instalaciones Térmicas'."
+            },
+            {
+              "id": "z5_2",
+              "title": "Generate Cover Art",
+              "status": "todo",
+              "xp": 30,
+              "note": "Consistent style with Dinosaurio."
+            },
+            {
+              "id": "z5_3",
+              "title": "Create Visualizer",
+              "status": "todo",
+              "xp": 30,
+              "note": "Concept: Thermal/Heatmap aesthetics?"
+            }
+          ]
+        },
+        {
+          "name": "Project Abbey Road (The Holy Grail)",
+          "tasks": [
+            {
+              "id": "z6_1",
+              "title": "Edit Video: Track 1",
+              "status": "todo",
+              "xp": 50,
+              "note": "Raw footage from Abbey Road 2018 (Feli Colina session)."
+            },
+            {
+              "id": "z6_2",
+              "title": "Edit Video: Track 2",
+              "status": "todo",
+              "xp": 50,
+              "note": "Raw footage available. Needs assembly."
+            },
+            {
+              "id": "z6_3",
+              "title": "Design EP Artwork",
+              "status": "todo",
+              "xp": 40,
+              "note": "High-end aesthetic. Commemorative style."
+            },
+            {
+              "id": "z6_4",
+              "title": "Unlock Milestone",
+              "status": "hold",
+              "xp": 100,
+              "note": "LOCKED until Zevah reaches 1,000 Monthly Listeners on Spotify."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shabtailab",
+      "name": "ShabtaiLab (AI Studio)",
+      "color": "#F59E0B",
+      "projects": [
+        {
+          "name": "Project: Lo-Fi Catriel y Paco",
+          "tasks": [
+            {
+              "id": "sl1_1",
+              "title": "Select Tracklist",
+              "status": "complete",
+              "xp": 20,
+              "note": "Focus on melodic tracks suitable for Anime/Study vibe",
+              "comment": "2026-01-28 OUTPUT: donr\n\n2026-01-28 OUTPUT: "
+            },
+            {
+              "id": "sl1_2",
+              "title": "Generate AI Audio (Suno)",
+              "status": "process",
+              "xp": 40,
+              "note": "Style: Lo-Fi/Chill without vocals (instrumental cover)",
+              "comment": "2026-01-28 OUTPUT: "
+            },
+            {
+              "id": "sl1_3",
+              "title": "Generate Visuals",
+              "status": "complete",
+              "xp": 30,
+              "note": "Style: Studio Ghibli/Anime, cozy atmosphere",
+              "comment": "2026-01-28 OUTPUT: \n\n2026-01-28 OUTPUT: "
+            },
+            {
+              "id": "sl1_4",
+              "title": "Edit & Upload",
+              "status": "todo",
+              "xp": 30,
+              "note": "1 Long-form Video (YouTube) + Vertical Clips (TikTok/IG)"
+            }
+          ]
+        },
+        {
+          "name": "Project: Lo-Fi Bad Bunny",
+          "tasks": [
+            {
+              "id": "sl2_1",
+              "title": "Concept Definition",
+              "status": "complete",
+              "xp": 20,
+              "note": "Style: Nostalgic/Chill Reinterpretation of recent hits",
+              "comment": "2026-01-28 OUTPUT: "
+            },
+            {
+              "id": "sl2_2",
+              "title": "Production & Visuals",
+              "status": "todo",
+              "xp": 50,
+              "note": "Create consistent visual loop for long-form video"
+            },
+            {
+              "id": "sl2_3",
+              "title": "Social Strategy",
+              "status": "todo",
+              "xp": 30,
+              "note": "Distribute via ShabtaiLab main channel"
+            }
+          ]
+        },
+        {
+          "name": "SaaS: Influencer Ads Engine",
+          "tasks": [
+            {
+              "id": "sl3_1",
+              "title": "Define MVP: Luxury Jewelry",
+              "status": "hold",
+              "xp": 50,
+              "note": "Template: Full body model -> Realistic Macro Zoom transition"
+            },
+            {
+              "id": "sl3_2",
+              "title": "Build Frontend (Web)",
+              "status": "hold",
+              "xp": 40,
+              "note": "Antigravity or Bubble interface"
+            },
+            {
+              "id": "sl3_3",
+              "title": "Build Backend (n8n)",
+              "status": "hold",
+              "xp": 60,
+              "note": "Orchestrate AI video generation pipeline"
+            },
+            {
+              "id": "sl3_4",
+              "title": "Acquire Talent Licenses",
+              "status": "hold",
+              "xp": 40,
+              "note": "Get rights for 1-2 influencers for the MVP"
+            },
+            {
+              "id": "t_1769620531",
+              "title": "adloop.app hace algo parecido, investigar todo",
+              "status": "todo",
+              "xp": 10,
+              "due_date": null
+            }
+          ]
+        },
+        {
+          "name": "Content: Atmospheric Sounds",
+          "tasks": [
+            {
+              "id": "sl4_1",
+              "title": "Create Soundscapes",
+              "status": "todo",
+              "xp": 20,
+              "note": "Brown Noise, Alpha Waves, Deep Focus"
+            },
+            {
+              "id": "sl4_2",
+              "title": "Publish Recurring Content",
+              "status": "todo",
+              "xp": 20,
+              "note": "Keep channel active and drive passive traffic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech_biz",
+      "name": "Tech & Startups",
+      "color": "#3B82F6",
+      "projects": [
+        {
+          "name": "SaaS: MAI (Music Audience Insights)",
+          "tasks": [
+            {
+              "id": "t1_1",
+              "title": "Define Micro-MVP Scope",
+              "status": "process",
+              "xp": 50,
+              "note": "Focus: Spotify Only. Input: Artist URL -> Output: Dashboard"
+            },
+            {
+              "id": "t1_2",
+              "title": "Implement Daily Snapshot Logic",
+              "status": "todo",
+              "xp": 60,
+              "note": "Workaround for missing API history: Record followers every 24h to build custom graph"
+            },
+            {
+              "id": "t1_3",
+              "title": "Select No-Code Stack",
+              "status": "hold",
+              "xp": 30,
+              "note": "Options: Bubble or Antigravity for rapid validation"
+            }
+          ]
+        },
+        {
+          "name": "Business: High-Ticket Affiliates",
+          "tasks": [
+            {
+              "id": "t2_1",
+              "title": "Select Niche: Managed Hosting",
+              "status": "todo",
+              "xp": 40,
+              "note": "Focus: Cloudways, WP Engine, Sucuri (High CPA + Recurring)"
+            },
+            {
+              "id": "t2_2",
+              "title": "Content Strategy: Data-Led Benchmarks",
+              "status": "todo",
+              "xp": 50,
+              "note": "Create 'Hard-to-fake' content: Speed tests, Uptime logs, Security checks"
+            },
+            {
+              "id": "t2_3",
+              "title": "Build Funnel Assets",
+              "status": "todo",
+              "xp": 40,
+              "note": "Develop 'VS' Comparison pages and ROI Calculators"
+            }
+          ]
+        },
+        {
+          "name": "Tool: Telegram Accountability Bot",
+          "tasks": [
+            {
+              "id": "t3_1",
+              "title": "Develop Python Script",
+              "status": "todo",
+              "xp": 50,
+              "note": "Core features: /addtask command and scheduled checks"
+            },
+            {
+              "id": "t3_2",
+              "title": "Implement 'Coach' Persona",
+              "status": "todo",
+              "xp": 30,
+              "note": "Proactive daily messaging: 'Did you complete X? ✅/❌'"
+            },
+            {
+              "id": "t3_3",
+              "title": "Deploy to Cloud",
+              "status": "todo",
+              "xp": 20,
+              "note": "Host on Replit or Railway for 24/7 uptime"
+            }
+          ]
+        },
+        {
+          "name": "App: Delayed Gratification",
+          "tasks": [
+            {
+              "id": "t4_1",
+              "title": "Define Core Logic",
+              "status": "process",
+              "xp": 40,
+              "note": "Flow: Panic Button -> Context (Emotion/Action) -> 20m Timer"
+            },
+            {
+              "id": "t4_2",
+              "title": "UI/UX Design",
+              "status": "todo",
+              "xp": 30,
+              "note": "Minimalist interface to reduce friction during impulse"
+            }
+          ]
+        },
+        {
+          "name": "Travel Affiliate Blog (SEO + Viral)",
+          "tasks": [
+            {
+              "id": "tb1",
+              "title": "Niche Research & Selection",
+              "status": "todo",
+              "xp": 30,
+              "note": "Focus: High-Ticket Tours, Luxury Rail (JR Pass), Jets (Villiers). Source: High-ticket research."
+            },
+            {
+              "id": "tb2",
+              "title": "Setup Affiliate Partnerships",
+              "status": "hold",
+              "xp": 40,
+              "note": "Apply to: Skyscanner, Klook, Rail Europe. Role: Deals & Finance."
+            },
+            {
+              "id": "tb3",
+              "title": "Deploy Blog Infrastructure",
+              "status": "todo",
+              "xp": 50,
+              "note": "Stack: WordPress or Ghost. Goal: SEO-optimized architecture."
+            },
+            {
+              "id": "tb4",
+              "title": "Viral Content Strategy (TikTok/IG)",
+              "status": "process",
+              "xp": 40,
+              "note": "Create influencers visiting cities to drive traffic to blog. Role: Social Media & Content."
+            },
+            {
+              "id": "tb5",
+              "title": "Keyword Research: Trails & Tours",
+              "status": "todo",
+              "xp": 30,
+              "note": "Identify high-intent keywords for SEO articles."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biohacking",
+      "name": "Health & Biohacking",
+      "color": "#10B981",
+      "projects": [
+        {
+          "name": "Protocolo Wegovy (Medical)",
+          "tasks": [
+            {
+              "id": "h1_1",
+              "title": "Weekly Injection Log",
+              "status": "process",
+              "xp": 20,
+              "note": "Current Dose: 0.25mg (1 click). Goal: Maintenance at low dose."
+            },
+            {
+              "id": "h1_2",
+              "title": "Satiety Management",
+              "status": "process",
+              "xp": 20,
+              "note": "Rule: Stop eating when 'good', not 'full'."
+            }
+          ]
+        },
+        {
+          "name": "Nutrición Anti-Triglicéridos",
+          "tasks": [
+            {
+              "id": "h2_1",
+              "title": "Weekly Meal Prep",
+              "status": "process",
+              "xp": 40,
+              "note": "Cook 6 chicken breasts + roasted veggies (Zucchini/Carrot/Cauliflower) on weekends."
+            },
+            {
+              "id": "h2_2",
+              "title": "Regla de Cierre Nocturno",
+              "status": "process",
+              "xp": 50,
+              "note": "Dinner: Protein + Veggies ONLY. No simple carbs/sugar/sauces at night."
+            },
+            {
+              "id": "h2_3",
+              "title": "Zero-Breakfast Habit",
+              "status": "complete",
+              "xp": 10,
+              "note": "Maintain natural fasting window (Coffee only)."
+            }
+          ]
+        },
+        {
+          "name": "Entrenamiento Híbrido",
+          "tasks": [
+            {
+              "id": "h3_1",
+              "title": "Tennis Sessions",
+              "status": "process",
+              "xp": 30,
+              "note": "Frequency: 2-3x Week (Cardio base)."
+            },
+            {
+              "id": "h3_2",
+              "title": "Strength Training",
+              "status": "todo",
+              "xp": 40,
+              "note": "Goal: 2x Week (20 min). Focus: Muscle mass to burn glucose/fat."
+            },
+            {
+              "id": "h3_3",
+              "title": "Visceral Fat Cardio",
+              "status": "process",
+              "xp": 20,
+              "note": "70 min walking > 20 min biking for metabolic health."
+            }
+          ]
+        },
+        {
+          "name": "Weed Reduction System",
+          "tasks": [
+            {
+              "id": "h4_1",
+              "title": "Apply '20 Minute Delay'",
+              "status": "process",
+              "xp": 50,
+              "note": "Trigger -> Wait 20 min -> Decide. Break the automatic loop."
+            },
+            {
+              "id": "h4_2",
+              "title": "Identify Trigger Type",
+              "status": "process",
+              "xp": 30,
+              "note": "Log if impulse is Emotional (Boredom/Anxiety) or Ritual (Cooking/Gaming)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "definitions": {
+    "MAT": "Minimal Actionable Task",
+    "statuses": [
+      "complete",
+      "process",
+      "hold",
+      "todo"
+    ]
+  }
+}
